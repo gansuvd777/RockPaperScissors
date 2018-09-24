@@ -26,8 +26,8 @@ function win(userChoice, computerChoice){
 	computerScore_span.innerHTML = computerScore;
 	var smallUserWord = "user".fontsize(3).sup();
 	var smallCompWord = "comp".fontsize(3).sup();
-	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}. You win!`;
-	
+	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}. You win!🌟👏🏻👏🏻👏🏻`;
+ 
 }
 function lose(userChoice, computerChoice){
 	computerScore++;
@@ -35,12 +35,12 @@ function lose(userChoice, computerChoice){
 	computerScore_span.innerHTML = computerScore;
 	var smallUserWord = "user".fontsize(3).sup();
 	var smallCompWord = "comp".fontsize(3).sup();
-	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost!`;
+	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost! 💩👎🏻👎🏻👎🏻`;
 }
 function tie(userChoice, computerChoice){
 	var smallUserWord = "user".fontsize(3).sup();
 	var smallCompWord = "comp".fontsize(3).sup();
-	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. It's a tie!`;
+	result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. It's a tie! 👐🏻 ✊🏻 🤝`;
 }
 function game(userChoice){
 	var computerChoice = getComputerChoice();
